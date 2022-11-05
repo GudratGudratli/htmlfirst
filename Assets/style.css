@@ -3,10 +3,34 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
+.copyright{
+    animation-name: colorful;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+a:hover{
+    font-size: 102%;
+    animation-name: colorful;
+    animation-duration: 3s;
+}
+@keyframes colorful {
+    33% {background-color: salmon;}
+    66% {background-color: forestgreen;}
+    100% {background-color: aqua;}
+}
+@keyframes copyrightG {
+    33% {background-color: salmon;}
+    66% {background-color: forestgreen;}
+    100% {background-color: aqua;}
+}
+
 body,html {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
     -webkit-text-size-adjust: none;
